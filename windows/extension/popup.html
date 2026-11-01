@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>DiaTweaks Windows</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <header><h1>DiaTweaks <span>Windows</span></h1><p>Prototype for Dia 1.5.0</p></header>
+    <section aria-labelledby="available-title">
+      <h2 id="available-title">Available in this prototype</h2>
+      <label class="feature active"><span><strong>Group tabs by domain</strong><small>Automatically group matching tabs in the same window</small></span><input id="auto" type="checkbox"></label>
+      <button id="group-now" type="button">Group current window now</button>
+      <p id="status" role="status" aria-live="polite"></p>
+    </section>
+    <section aria-labelledby="native-title">
+      <h2 id="native-title">Requires Dia native Windows patches</h2>
+      <p class="note">These are intentionally disabled. An extension cannot modify Dia's native controls.</p>
+      <div id="native-features"></div>
+    </section>
+    <footer>Dia supports a native Focus Mode. Try Ctrl+S in Dia to toggle it. No executable files are modified.</footer>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>
